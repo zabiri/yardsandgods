@@ -15,10 +15,24 @@
     .SideDrawer a:hover, .SideDrawer a:active {
       color: #fa923f; }
   .SideDrawer li {
-    margin: .5rem 0; }
+    margin: 0.5rem 0; }
   .SideDrawer ul {
     height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .SideDrawer-enter {
+    opacity: 0.5;
+    transform: translateX(-100%); }
+  .SideDrawer-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 300ms ease-in-out; }
+  .SideDrawer-exit {
+    opacity: 1;
+    transform: translateX(0%); }
+  .SideDrawer-exit-active {
+    opacity: 0.5;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out; }
