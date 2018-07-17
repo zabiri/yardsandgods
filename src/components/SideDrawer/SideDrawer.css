@@ -1,0 +1,24 @@
+.SideDrawer {
+  height: 100%;
+  background: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200; }
+  .SideDrawer a {
+    color: #521751;
+    text-decoration: none;
+    font-size: 1.2rem; }
+    .SideDrawer a:hover, .SideDrawer a:active {
+      color: #fa923f; }
+  .SideDrawer li {
+    margin: .5rem 0; }
+  .SideDrawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
