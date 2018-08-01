@@ -1,5 +1,6 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
+import NavItems from "../NavItems/NavItems"
 import "./SideDrawer.css";
 const sideDrawer = props => {
     const animationTiming = {
@@ -14,16 +15,9 @@ const sideDrawer = props => {
       in={props.isOpen}
       classNames="SideDrawer"
     >
-      <nav className="SideDrawer">
-        <ul>
-          <li>
-            <a href="/">Products</a>
-          </li>
-          <li>
-            <a href="/">Users</a>
-          </li>
-        </ul>
-      </nav>
+      
+        <NavItems clicked={props.linkClickHandler} whichNav="SideDrawer"/>
+      
     </CSSTransition>
   );
 };

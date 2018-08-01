@@ -1,5 +1,7 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
+import NavItems from '../NavItems/NavItems'
 import './Toolbar.css'
 const toolbar = (props) => {
   return (
@@ -8,14 +10,9 @@ const toolbar = (props) => {
             <div>
                 <DrawerToggleButton click={props.drawerClickHandler}/>
             </div>
-            <div className="Toolbar__logo"><a href="/">The Logo</a></div>
+            <div className="Toolbar__logo"><NavLink exact to="/">The Logo</NavLink></div>
             <div className="Toolbar__spacer"/>
-            <div className="Toolbar__navigation-items">
-                <ul>
-                    <li><a href="/">Products</a></li>
-                    <li><a href="/">Users</a></li>
-                </ul>
-            </div>
+            <NavItems whichNav="Toolbar__navigation-items"/>
         </nav>
     </header>
   )
