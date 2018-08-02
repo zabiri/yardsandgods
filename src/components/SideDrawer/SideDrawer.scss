@@ -1,20 +1,22 @@
+@import '../../scss/main';
 .SideDrawer {
   height: 100%;
-  background: white;
+  background: $color-main;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
-  max-width: 400px;
+  width: 40rem;
+  // max-width: 400px;
   z-index: 200;
   & a {
-    color: #521751;
+    color: $color-text-header;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: $font-header;
     &:hover,
     &:active {
-      color: #fa923f;
+      color: $color-accent-1;
     }
   }
   & li {

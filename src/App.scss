@@ -1,4 +1,6 @@
+@import './scss/main';
 .App {
+    background-color: $color-main;
     &__contentBox {
         margin-top: 64px;
     }

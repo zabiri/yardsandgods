@@ -1,19 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:400,700|Old+Standard+TT:400i|Open+Sans+Condensed:700");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #1e272e; }
+
 .SideDrawer {
   height: 100%;
-  background: white;
+  background: #1e272e;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
-  max-width: 400px;
+  width: 40rem;
   z-index: 200; }
   .SideDrawer a {
-    color: #521751;
+    color: #d2dae2;
     text-decoration: none;
-    font-size: 1.2rem; }
+    font-size: 2rem;
+    font-family: Open Sans Condensed; }
     .SideDrawer a:hover, .SideDrawer a:active {
-      color: #fa923f; }
+      color: #05c46b; }
   .SideDrawer li {
     margin: 0.5rem 0; }
   .SideDrawer ul {

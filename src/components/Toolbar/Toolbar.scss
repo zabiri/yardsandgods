@@ -1,16 +1,17 @@
+@import '../../scss/main';
 .Toolbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #521751;
+  background: $color-main;
   height: 56px;
   &__logo {
       margin-left: 1rem;
     & a {
       color: white;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
   }
   &__navigation {
@@ -29,13 +30,15 @@
         padding: 0 0.5rem;
       }
       & a {
-        color: white;
+        color: $color-text-header;
         text-decoration: none;
+        font-size: 2rem;
+        font-family: $font-header;
         &:hover {
-          color: #fa923f;
+          color: $color-accent-1;
         }
         &:active {
-          color: #fa923f;
+          color: $color-accent-1;
         }
       }
     }

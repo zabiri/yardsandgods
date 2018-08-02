@@ -1,13 +1,17 @@
-import React from 'react'
-import './DrawerToggleButton.css'
-const drawerToggleButton = (props) => {
+import React from "react";
+import "./DrawerToggleButton.css";
+const drawerToggleButton = props => {
+  let toggleClasses = ["toggle-button"];
+  props.drawerOpen
+    ? (toggleClasses = ["hamburger hamburger--arrowalt", "is-active"].join(" "))
+    : (toggleClasses = ["hamburger hamburger--arrowalt"].join(" "));
   return (
-    <div className="toggle-button" onClick={props.click}>
-        <div className="toggle-button__line"/>
-        <div className="toggle-button__line"/>
-        <div className="toggle-button__line"/>
-    </div>
-  )
-}
+    <button className={toggleClasses} type="button" onClick={props.click}>
+      <span class="hamburger-box">
+        <span class="hamburger-inner" />
+      </span>
+    </button>
+  );
+};
 
-export default drawerToggleButton
+export default drawerToggleButton;
