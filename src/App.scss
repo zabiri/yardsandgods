@@ -1,10 +1,17 @@
 @import './scss/main';
 .App {
+    // height: 100%;
     background-color: $color-main;
     &__contentBox {
-        margin-top: 64px;
+        height: 100vh;
+        transform: translateX(0);
+        transition: 300ms ease-in;
+        &-open {
+            transform: translateX(40rem);
+            @include respond(phone){
+                transform: translateX(70vw)
+            }
+        }
     }
 }
-
-
 

@@ -4,10 +4,12 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Backdrop from "./components/Backdrop/Backdrop";
 import DrawerToggleButton from "./components/SideDrawer/DrawerToggleButton";
-import Toolbar from "./components/Toolbar/Toolbar";
+
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 
+
 import asyncComponent from "./components/hoc/asyncComponent/asyncComponent";
+
 
 import "./App.css";
 
@@ -41,7 +43,10 @@ class App extends Component {
   };
   render() {
     let backdrop;
-
+    let contentBoxClass
+    this.state.sideDrawerOpen ? 
+      contentBoxClass = "App__contentBox App__contentBox-open":
+      contentBoxClass = "App__contentBox"
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
@@ -56,15 +61,17 @@ class App extends Component {
           />
           {/* {sideDrawer} */}
           {backdrop}
-          <main className="App__contentBox">
-            <Switch>
-              <Route path="/about" component={About} />
-              <Route path="/discography" component={Discography} />
-              <Route path="/filmography" component={Filmography} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/" component={Home} />
-            </Switch>
-          </main>
+
+            
+            <main className={contentBoxClass}>
+              <Switch>
+                <Route path="/about" component={About} />
+                <Route path="/discography" component={Discography} />
+                <Route path="/filmography" component={Filmography} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/" component={Home} />
+              </Switch>
+            </main>
         </div>
       </BrowserRouter>
     );

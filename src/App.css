@@ -11,9 +11,17 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e; }
+  background-color: #1e272e;
+  overflow-x: hidden !important; }
 
 .App {
   background-color: #1e272e; }
   .App__contentBox {
-    margin-top: 64px; }
+    height: 100vh;
+    transform: translateX(0);
+    transition: 300ms ease-in; }
+    .App__contentBox-open {
+      transform: translateX(40rem); }
+      @media only screen and (max-width: 37.5em) {
+        .App__contentBox-open {
+          transform: translateX(70vw); } }

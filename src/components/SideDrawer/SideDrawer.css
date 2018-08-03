@@ -11,17 +11,24 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e; }
+  background-color: #1e272e;
+  overflow-x: hidden !important; }
 
 .SideDrawer {
   height: 100%;
   background: #1e272e;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 40rem;
+  max-width: 400px;
   z-index: 200; }
+  @media only screen and (max-width: 37.5em) {
+    .SideDrawer {
+      width: 70%; } }
   .SideDrawer a {
     color: #d2dae2;
     text-decoration: none;

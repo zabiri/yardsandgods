@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:400,700|Old+Standard+TT:400i|Open+Sans+Condensed:700");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #1e272e;
+  overflow-x: hidden !important; }
+
+.About {
+  color: red; }

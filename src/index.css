@@ -11,4 +11,5 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e; }
+  background-color: #1e272e;
+  overflow-x: hidden !important; }

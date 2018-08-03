@@ -1,10 +1,12 @@
 import React from 'react'
 
+import './About.css'
+
 const about = () => {
   return (
-    <div>
-      <p>About!</p>
-    </div>
+    <section className="About">
+      <p>Pee is stored in the balls</p>
+    </section>
   )
 }
 

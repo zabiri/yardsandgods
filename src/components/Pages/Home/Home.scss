@@ -1,0 +1,25 @@
+@import '../../../scss/main';
+
+.Home {
+    height: 100%;
+    background-image: url('../../../assets/img/studio.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: $color-text-header;
+    
+    &__hero {
+        @include absCenter;
+        &-header {
+            &-h1 {
+            text-align: center;
+            font-size: 8.6rem;
+            font-family: $font-header;
+            }
+            &-h2 {
+            text-align: center;
+            font-size: 2.6rem;
+            font-family: $font-subhead;
+            }
+        }
+    }
+}

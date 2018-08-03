@@ -1,4 +1,10 @@
-
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 // MEDIA QUERY MANAGER
 // -------------------
 // 600-900: tablet in portrait

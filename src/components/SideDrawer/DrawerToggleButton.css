@@ -11,10 +11,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e; }
+  background-color: #1e272e;
+  overflow-x: hidden !important; }
 
 .hamburger {
-  padding: 15px 15px;
+  padding: 1.5rem 1.5rem;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -27,26 +28,33 @@ body {
   border: 0;
   margin: 0;
   overflow: visible;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 201;
+  transition: transform 400ms ease;
   /*
    * Arrow Alt
    */ }
+  .hamburger.is-active {
+    transform: translateX(33rem); }
+    @media only screen and (max-width: 37.5em) {
+      .hamburger.is-active {
+        transform: translateX(calc(70vw - 7rem)); } }
   .hamburger-box {
-    width: 40px;
-    height: 24px;
+    width: 4rem;
+    height: 2.4rem;
     display: inline-block;
     position: relative;
     z-index: 201; }
   .hamburger-inner {
     display: block;
     top: 50%;
-    margin-top: -2px; }
+    margin-top: -0.2rem; }
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-      width: 40px;
-      height: 4px;
-      background-color: #000;
-      border-radius: 4px;
+      width: 4rem;
+      height: 0.4rem;
+      background-color: #d2dae2;
+      border-radius: 0.4rem;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
@@ -55,9 +63,9 @@ body {
       content: "";
       display: block; }
     .hamburger-inner::before {
-      top: -10px; }
+      top: -1rem; }
     .hamburger-inner::after {
-      bottom: -10px; }
+      bottom: -1rem; }
   .hamburger:hover {
     opacity: 0.7; }
   .hamburger--arrowalt .hamburger-inner::before {
@@ -66,9 +74,9 @@ body {
     transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1); }
   .hamburger--arrowalt.is-active .hamburger-inner::before {
     top: 0;
-    transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);
+    transform: translate3d(-0.8rem, -1rem, 0) rotate(-45deg) scale(0.7, 1);
     transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
   .hamburger--arrowalt.is-active .hamburger-inner::after {
     bottom: 0;
-    transform: translate3d(-8px, 10px, 0) rotate(45deg) scale(0.7, 1);
+    transform: translate3d(-0.8rem, 1rem, 0) rotate(45deg) scale(0.7, 1);
     transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22); }

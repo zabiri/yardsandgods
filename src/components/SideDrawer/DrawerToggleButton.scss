@@ -1,43 +1,7 @@
 @import "../../scss/main";
-// .toggle-button {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     height: 24px;
-//     width: 36px;
-//     background: transparent;
-//     border: none;
-//     cursor: pointer;
-//     padding: 0;
-//     box-sizing: border-box;
-//     position: relative;
-//     z-index: 201;
-//     // animation: toggle-button__fade-in 500ms ease-in;
-//     &:focus {
-//         outline: none;
-//     }
-//     &__line {
-//         width: 30px;
-//         height: 2px;
-//         background: $color-text-header;
-//     }
-//     &__open {
-//         left: 36.4rem;
-//         animation: toggle-button__fade-in 500ms ease-in;
-//     }
-
-// }
-// @keyframes toggle-button__fade-in {
-//     from {
-//         opacity: 0
-//     }
-//     to {
-//         opacity: 1
-//     }
-// }
 
 .hamburger {
-  padding: 15px 15px;
+  padding: 1.5rem 1.5rem;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -50,12 +14,20 @@
   border: 0;
   margin: 0;
   overflow: visible;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 201;
+  transition: transform 400ms ease;
+  &.is-active {
+    transform: translateX(33rem);
+    @include respond(phone) {
+        transform: translateX(unquote("calc(70vw - 7rem)"));
+    }
+  }
 
   &-box {
-    width: 40px;
-    height: 24px;
+    width: 4rem;
+    height: 2.4rem;
     display: inline-block;
     position: relative;
     z-index: 201;
@@ -63,14 +35,14 @@
   &-inner {
     display: block;
     top: 50%;
-    margin-top: -2px;
+    margin-top: -0.2rem;
     &,
     &::before,
     &::after {
-      width: 40px;
-      height: 4px;
-      background-color: #000;
-      border-radius: 4px;
+      width: 4rem;
+      height: 0.4rem;
+      background-color: $color-text-header;
+      border-radius: 0.4rem;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
@@ -82,10 +54,10 @@
       display: block;
     }
     &::before {
-      top: -10px;
+      top: -1rem;
     }
     &::after {
-      bottom: -10px;
+      bottom: -1rem;
     }
   }
   &:hover {
@@ -94,6 +66,7 @@
   /*
    * Arrow Alt
    */
+
   &--arrowalt &-inner::before {
     transition: top 0.1s 0.1s ease,
       transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -106,14 +79,14 @@
 
   &--arrowalt.is-active &-inner::before {
     top: 0;
-    transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);
+    transform: translate3d(-0.8rem, -1rem, 0) rotate(-45deg) scale(0.7, 1);
     transition: top 0.1s ease,
       transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   }
 
   &--arrowalt.is-active &-inner::after {
     bottom: 0;
-    transform: translate3d(-8px, 10px, 0) rotate(45deg) scale(0.7, 1);
+    transform: translate3d(-0.8rem, 1rem, 0) rotate(45deg) scale(0.7, 1);
     transition: bottom 0.1s ease,
       transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   }
