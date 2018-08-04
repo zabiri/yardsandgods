@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Mukta:400,700|Old+Standard+TT:400i|Open+Sans+Condensed:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 *,
 *::after,
 *::before {
@@ -11,17 +11,17 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e;
+  background-color: black;
   overflow-x: hidden !important; }
 
 .App {
-  background-color: #1e272e; }
+  background-color: black; }
   .App__contentBox {
     height: 100vh;
     transform: translateX(0);
     transition: 300ms ease-in; }
     .App__contentBox-open {
-      transform: translateX(40rem); }
+      transform: translateX(20rem); }
       @media only screen and (max-width: 37.5em) {
         .App__contentBox-open {
           transform: translateX(70vw); } }

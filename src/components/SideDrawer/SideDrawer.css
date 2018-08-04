@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Mukta:400,700|Old+Standard+TT:400i|Open+Sans+Condensed:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 *,
 *::after,
 *::before {
@@ -11,39 +11,52 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e;
+  background-color: black;
   overflow-x: hidden !important; }
 
 .SideDrawer {
   height: 100%;
-  background: #1e272e;
+  background: black;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 40rem;
-  max-width: 400px;
+  width: 20rem;
+  max-width: 20rem;
   z-index: 200; }
   @media only screen and (max-width: 37.5em) {
     .SideDrawer {
       width: 70%; } }
+  .SideDrawer h1 {
+    color: white;
+    font-family: League Gothic;
+    font-size: 4.5rem;
+    margin-bottom: 1rem; }
   .SideDrawer a {
     color: #d2dae2;
     text-decoration: none;
-    font-size: 2rem;
-    font-family: Open Sans Condensed; }
+    font-size: 3rem;
+    font-family: League Gothic; }
     .SideDrawer a:hover, .SideDrawer a:active {
       color: #05c46b; }
   .SideDrawer li {
-    margin: 0.5rem 0; }
+    padding: 0.5rem;
+    margin: 0 4.5rem; }
+    .SideDrawer li:not(:last-of-type) {
+      border-bottom: dotted 1px #1c2126; }
   .SideDrawer ul {
     height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .SideDrawer i {
+    font-size: .9em;
+    font-weight: 200;
+    margin: 0.4rem;
+    margin-top: 2rem; }
   .SideDrawer-enter {
     opacity: 0.5;
     transform: translateX(-100%); }

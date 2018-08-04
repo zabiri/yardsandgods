@@ -14,13 +14,11 @@ body {
   background-color: black;
   overflow-x: hidden !important; }
 
-.About {
+.Discography {
   height: 100%;
-  background-image: url("../../../assets/img/aboutme.jpg");
-  background-size: cover;
-  background-position: center center;
+  background: #485460;
   color: #d2dae2; }
-  .About__container {
+  .Discography__container {
     width: 80%;
     padding: 10rem;
     position: absolute;
@@ -28,18 +26,14 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .About__container-header {
+    .Discography__container-header {
       font-family: League Gothic;
       font-weight: 200;
       font-size: 6rem;
       text-shadow: 0.2rem 0.2rem #485460; }
-      .About__container-header:nth-of-type(even) {
+      .Discography__container-header:nth-of-type(even) {
         text-align: right; }
-    .About__container-paragraph {
-      font-family: Open Sans;
-      font-weight: 200;
-      font-size: 2rem;
-      text-indent: 3.5rem;
-      hyphens: auto;
-      text-align: justify;
-      text-shadow: 0.1rem 0.1rem black; }
+    .Discography__container-discoGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 30px; }

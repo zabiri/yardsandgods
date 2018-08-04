@@ -1,25 +1,39 @@
-@import '../../../scss/main';
+@import "../../../scss/main";
 
 .Home {
-    height: 100%;
-    background-image: url('../../../assets/img/studio.jpg');
-    background-size: cover;
-    background-position: center center;
-    color: $color-text-header;
-    
-    &__hero {
-        @include absCenter;
-        &-header {
-            &-h1 {
-            text-align: center;
-            font-size: 8.6rem;
-            font-family: $font-header;
-            }
-            &-h2 {
-            text-align: center;
-            font-size: 2.6rem;
-            font-family: $font-subhead;
-            }
-        }
+  height: 100%;
+  background-image: url("../../../assets/img/studio.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: $color-text-header;
+
+  &__hero {
+    @include absCenter;
+    height: 45rem;
+    background-image: url("../../../assets/img/elephantlogo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &-header {
+      position: relative;
+      top: 25%;
+      transform: translateY(-2.9rem);
+      @include headerShadow;
+
+      &-h1 {
+        text-align: center;
+        font-size: 15rem;
+        font-family: $font-header;
+        line-height: 0.95em;
+        font-weight: 200;
+      }
+      &-h2 {
+        text-align: center;
+        font-size: 2.7rem;
+        letter-spacing: 0.5rem;
+        font-family: $font-subhead;
+        font-weight: 200;
+      }
     }
+  }
 }

@@ -1,0 +1,18 @@
+@import "../../../scss/main";
+
+.Discography {
+  height: 100%;
+  background: $color-secondary;
+  color: $color-text-header;
+  &__container {
+    @include container;
+    &-header {
+      @include header;
+    }
+    &-discoGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 30px;
+    }
+  }
+}

@@ -19,7 +19,7 @@
   z-index: 201;
   transition: transform 400ms ease;
   &.is-active {
-    transform: translateX(33rem);
+    transform: translateX(14rem);
     @include respond(phone) {
         transform: translateX(unquote("calc(70vw - 7rem)"));
     }

@@ -1,4 +1,4 @@
-@import '../../scss/main';
+@import "../../scss/main";
 .SideDrawer {
   height: 100%;
   background: $color-main;
@@ -8,24 +8,37 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 40rem;
+  width: 20rem;
+
   @include respond(phone) {
     width: 70%;
   }
-  max-width: 400px;
+  max-width: 20rem;
   z-index: 200;
+  & h1 {
+    color: white;
+    font-family: $font-header;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+  }
   & a {
     color: $color-text-header;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: $font-header;
+
     &:hover,
     &:active {
       color: $color-accent-1;
     }
   }
   & li {
-    margin: 0.5rem 0;
+    // width: 15rem;
+    padding: 0.5rem;
+    margin: 0 4.5rem;
+    &:not(:last-of-type) {
+      border-bottom: dotted 1px darken($color-secondary, 20%);
+    }
   }
   & ul {
     height: 100%;
@@ -33,6 +46,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  & i {
+    font-size: .9em;
+    font-weight: 200;
+    margin: 0.4rem;
+    margin-top: 2rem;
   }
   //CSSTransition classes
   &-enter {

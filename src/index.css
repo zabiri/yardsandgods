@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Mukta:400,700|Old+Standard+TT:400i|Open+Sans+Condensed:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url("./assets/webfont/leaguegothic.eot");
+  src: url("./assets/webfont/leaguegothic.eot?#iefix") format("embedded-opentype"), url("./assets/webfont/leaguegothic.woff") format("woff"), url("./assets/webfont/leaguegothic.ttf") format("truetype"), url("./assets/webfont/leaguegothic.svg#fontname") format("svg"); }
+
 *,
 *::after,
 *::before {
@@ -11,5 +16,5 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #1e272e;
+  background-color: black;
   overflow-x: hidden !important; }

@@ -1,5 +1,18 @@
-@import '../../../scss/main';
+@import "../../../scss/main";
 
 .About {
-    color: red;
+  height: 100%;
+  background-image: url("../../../assets/img/aboutme.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: $color-text-header;
+  &__container {
+    @include container;
+    &-header {
+      @include header;
+    }
+    &-paragraph {
+        @include paragraph;
+    }
+  }
 }

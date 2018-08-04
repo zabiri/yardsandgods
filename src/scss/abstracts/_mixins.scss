@@ -3,8 +3,40 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+@mixin headerShadow {
+  text-shadow: 0.2rem 0.2rem $color-secondary;
+}
+@mixin paragraphShadow {
+  text-shadow: 0.1rem 0.1rem black;
+}
+@mixin container {
+  width: 80%;
+  padding: 10rem;
+  @include absCenter;
+}
+
+@mixin header {
+  font-family: League Gothic;
+  font-weight: 200;
+  font-size: 6rem;
+  @include headerShadow;
+  &:nth-of-type(even) {
+    text-align: right;
+  }
+}
+
+@mixin paragraph {
+  font-family: Open Sans;
+  font-weight: 200;
+  font-size: 2rem;
+  text-indent: 3.5rem;
+  hyphens: auto;
+  text-align: justify;
+  @include paragraphShadow;
+}
+
 // MEDIA QUERY MANAGER
 // -------------------
 // 600-900: tablet in portrait

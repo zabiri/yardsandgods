@@ -7,8 +7,8 @@ const drawerToggleButton = props => {
     : (toggleClasses = ["hamburger hamburger--arrowalt"].join(" "));
   return (
     <button className={toggleClasses} type="button" onClick={props.click}>
-      <span class="hamburger-box">
-        <span class="hamburger-inner" />
+      <span className="hamburger-box">
+        <span className="hamburger-inner" />
       </span>
     </button>
   );

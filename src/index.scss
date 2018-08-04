@@ -1,1 +1,9 @@
+@font-face {
+    font-family : 'LeagueGothic';
+    src         : url('./assets/webfont/leaguegothic.eot');
+    src         : url('./assets/webfont/leaguegothic.eot?#iefix') format('embedded-opentype'),
+                  url('./assets/webfont/leaguegothic.woff') format('woff'),
+                  url('./assets/webfont/leaguegothic.ttf') format('truetype'),
+                  url('./assets/webfont/leaguegothic.svg#fontname') format('svg');
+  }
 @import "./scss/main"

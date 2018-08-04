@@ -1,0 +1,34 @@
+@import "../../../scss/main";
+
+.Contact {
+  height: 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../../assets/img/newdrums.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: $color-text-header;
+  &__container {
+    @include container;
+    &-header {
+      @include header;
+    }
+    &-paragraph {
+        @include paragraph;
+    }
+    &-ul {
+        @include paragraphShadow;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 2rem;
+        font-family: Open Sans;
+        font-weight: 200;
+        font-size: 2rem;
+        list-style: none;
+        text-indent: 2rem;
+    }
+    & a {
+      text-decoration: none;
+      color: $color-text-header;  
+    }
+  }
+}
