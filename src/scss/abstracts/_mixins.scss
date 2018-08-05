@@ -14,11 +14,14 @@
 @mixin container {
   width: 80%;
   padding: 10rem;
+}
+@mixin absCenterContainer {
+  @include container;
   @include absCenter;
 }
 
 @mixin header {
-  font-family: League Gothic;
+  font-family: $font-header;
   font-weight: 200;
   font-size: 6rem;
   @include headerShadow;
@@ -36,7 +39,14 @@
   text-align: justify;
   @include paragraphShadow;
 }
-
+@mixin discogInfobox {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  background-color: rgba(black, 0.7);
+}
 // MEDIA QUERY MANAGER
 // -------------------
 // 600-900: tablet in portrait

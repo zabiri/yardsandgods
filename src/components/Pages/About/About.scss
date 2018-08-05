@@ -7,7 +7,7 @@
   background-position: center center;
   color: $color-text-header;
   &__container {
-    @include container;
+    @include absCenterContainer;
     &-header {
       @include header;
     }

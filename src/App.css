@@ -19,7 +19,7 @@ body {
   .App__contentBox {
     height: 100vh;
     transform: translateX(0);
-    transition: 300ms ease-in; }
+    transition: 300ms ease-in-out; }
     .App__contentBox-open {
       transform: translateX(20rem); }
       @media only screen and (max-width: 37.5em) {

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: black;
+  overflow-x: hidden !important; }
+
+.Record {
+  perspective: 150rem;
+  position: relative;
+  box-sizing: border-box;
+  height: 33rem;
+  width: 33rem; }
+  .Record__name {
+    color: #d2dae2;
+    font-family: League Gothic;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-left: 1.2rem;
+    text-shadow: 0.1rem 0.1rem black; }
+  .Record__artist {
+    color: #d2dae2;
+    font-weight: 200;
+    font-size: 2.5rem;
+    font-family: League Gothic;
+    text-shadow: 0.1rem 0.1rem black;
+    margin-left: 1.2rem; }
+  .Record__credits {
+    color: #d2dae2;
+    font-size: 1.8rem;
+    hyphens: auto;
+    font-family: Open Sans;
+    text-shadow: 0.1rem 0.1rem black;
+    margin: auto 1.2rem; }
+  .Record__side {
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33rem;
+    transition: all 800ms ease;
+    width: 33rem;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 4px rgba(0, 0, 0, 0.3); }
+    .Record__side--front {
+      background-color: white; }
+      .Record__side--front-infobox {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        background-color: rgba(0, 0, 0, 0.7); }
+    .Record__side--back {
+      background-color: black;
+      background-image: url("../../assets/img/discog/recordback.jpg");
+      background-size: cover;
+      transform: rotateY(180deg); }
+      .Record__side--back-infobox {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        background-color: rgba(0, 0, 0, 0.7); }
+  .Record:hover .Record__side--front {
+    transform: rotateY(-180deg); }
+  .Record:hover .Record__side--back {
+    transform: rotateY(0deg); }
+  .Record__cover {
+    width: 100%;
+    max-width: 33rem;
+    max-height: 33rem;
+    height: 100%;
+    object-fit: cover; }
+  @media only screen and (hover: none) {
+    .Record__side--front-infobox {
+      display: none; }
+    .Record__side--back-infobox {
+      transform: rotateY(0deg) scaleX(-1); }
+    .Record:hover .Record__side--front {
+      transform: rotateY(0deg); }
+    .Record:hover .Record__side--back {
+      transform: rotateY(-180deg); } }
