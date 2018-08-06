@@ -10,6 +10,9 @@
   transition: ease 200ms;
   &__container {
     @include container;
+    @media screen and (min-height: 52.188em)  {
+      @include absCenter;
+    }
     &-header {
       @include header;
     }
