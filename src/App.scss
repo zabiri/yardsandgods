@@ -4,13 +4,12 @@
     background-color: $color-main;
     &__contentBox {
         height: 100vh;
-        transform: translateX(0);
+        position: relative;
+        transform: translate3d(0);
         transition: 300ms ease-in-out;
         &-open {
-            transform: translateX(20rem);
-            @include respond(phone){
-                transform: translateX(70vw)
-            }
+            transform: translate3d(20rem,0,0);
+            
         }
     }
 }

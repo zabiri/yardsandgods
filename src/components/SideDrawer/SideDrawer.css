@@ -26,16 +26,13 @@ body {
   width: 20rem;
   max-width: 20rem;
   z-index: 200; }
-  @media only screen and (max-width: 37.5em) {
-    .SideDrawer {
-      width: 70%; } }
   .SideDrawer h1 {
     color: white;
     font-family: League Gothic;
     font-size: 4.5rem;
     margin-bottom: 1rem; }
   .SideDrawer a {
-    color: #d2dae2;
+    color: white;
     text-decoration: none;
     font-size: 3rem;
     font-family: League Gothic; }

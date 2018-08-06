@@ -2,8 +2,10 @@
 
 .Discography {
   //   height: 100%;
+  background-image: url("../../../assets/img/record.jpg");
+  background-size: cover;
+  background-position: center center;
   
-  background: $color-secondary;
   color: $color-text-header;
   &__container {
     @include container;

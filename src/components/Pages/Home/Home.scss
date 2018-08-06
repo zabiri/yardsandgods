@@ -8,12 +8,23 @@
   color: $color-text-header;
 
   &__hero {
+    cursor: pointer;
     @include absCenter;
     height: 45rem;
     background-image: url("../../../assets/img/elephantlogo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
+    @include respond(tab-land) {
+      height: 59rem;
+      background-position: bottom center;
+      min-width: 59.5rem;
+    }
+    @include respond(phone) {
+      height: 34rem;
+      background-position: bottom center;
+      min-width: 31.2667rem;
+    }
     &-header {
       position: relative;
       top: 25%;
@@ -23,14 +34,28 @@
       &-h1 {
         text-align: center;
         font-size: 15rem;
+        @include respond(tab-land) {
+          font-size: 15.5rem;
+        }
+        @include respond(phone) {
+          font-size: 7.5rem;
+        }
         font-family: $font-header;
         line-height: 0.95em;
         font-weight: 200;
       }
       &-h2 {
         text-align: center;
-        font-size: 2.7rem;
+        font-size: 3.3rem;
         letter-spacing: 0.5rem;
+        @include respond(tab-land) {
+          font-size: 4.7rem;
+          letter-spacing: 0.2rem;
+        }
+        @include respond(phone) {
+          font-size: 2.2rem;
+          letter-spacing: 0.1rem;
+        }
         font-family: $font-subhead;
         font-weight: 200;
       }

@@ -19,8 +19,9 @@ body {
   background-image: url("../../../assets/img/studio.jpg");
   background-size: cover;
   background-position: center center;
-  color: #d2dae2; }
+  color: white; }
   .Home__hero {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,6 +32,16 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right; }
+    @media only screen and (max-width: 75em) {
+      .Home__hero {
+        height: 59rem;
+        background-position: bottom center;
+        min-width: 59.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Home__hero {
+        height: 34rem;
+        background-position: bottom center;
+        min-width: 31.2667rem; } }
     .Home__hero-header {
       position: relative;
       top: 25%;
@@ -42,9 +53,23 @@ body {
         font-family: League Gothic;
         line-height: 0.95em;
         font-weight: 200; }
+        @media only screen and (max-width: 75em) {
+          .Home__hero-header-h1 {
+            font-size: 15.5rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .Home__hero-header-h1 {
+            font-size: 7.5rem; } }
       .Home__hero-header-h2 {
         text-align: center;
-        font-size: 2.7rem;
+        font-size: 3.3rem;
         letter-spacing: 0.5rem;
         font-family: League Gothic;
         font-weight: 200; }
+        @media only screen and (max-width: 75em) {
+          .Home__hero-header-h2 {
+            font-size: 4.7rem;
+            letter-spacing: 0.2rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .Home__hero-header-h2 {
+            font-size: 2.2rem;
+            letter-spacing: 0.1rem; } }

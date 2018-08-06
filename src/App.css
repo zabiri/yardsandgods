@@ -18,10 +18,8 @@ body {
   background-color: black; }
   .App__contentBox {
     height: 100vh;
-    transform: translateX(0);
+    position: relative;
+    transform: translate3d(0);
     transition: 300ms ease-in-out; }
     .App__contentBox-open {
-      transform: translateX(20rem); }
-      @media only screen and (max-width: 37.5em) {
-        .App__contentBox-open {
-          transform: translateX(70vw); } }
+      transform: translate3d(20rem, 0, 0); }

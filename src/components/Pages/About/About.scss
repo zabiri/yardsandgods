@@ -1,18 +1,20 @@
 @import "../../../scss/main";
 
 .About {
-  height: 100%;
-  background-image: url("../../../assets/img/aboutme.jpg");
+  min-height: 100vh;
+  background: url("../../../assets/img/aboutme.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   color: $color-text-header;
+  transition: ease 200ms;
   &__container {
-    @include absCenterContainer;
+    @include container;
     &-header {
       @include header;
     }
     &-paragraph {
-        @include paragraph;
+      @include paragraph;
     }
   }
 }

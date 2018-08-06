@@ -2,8 +2,8 @@ import React from "react";
 import "./Record.css";
 const record = props => {
   return (
-    <a target="_blank" href={props.link}>
-      <article className="Record">
+    <article className="Record">
+      <a target="_blank" href={props.link}>
         <div className="Record__side Record__side--front">
           <img
             alt={`${props.artist} - ${props.name}`}
@@ -18,12 +18,14 @@ const record = props => {
         </div>
         <div className="Record__side Record__side--back">
           <div className="Record__side--back-infobox">
-            <p className="Record__artist">{props.name} by {props.artist} ({props.year}) :</p>
+            <p className="Record__artist">
+              {props.name} by {props.artist} ({props.year}) :
+            </p>
             <p className="Record__credits">{props.credits}</p>
           </div>
         </div>
-      </article>
-    </a>
+      </a>
+    </article>
   );
 };
 

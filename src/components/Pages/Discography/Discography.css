@@ -15,12 +15,19 @@ body {
   overflow-x: hidden !important; }
 
 .Discography {
-  background: #485460;
-  color: #d2dae2; }
+  background-image: url("../../../assets/img/record.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white; }
   .Discography__container {
-    width: 80%;
+    box-sizing: border-box;
+    width: 100%;
     padding: 10rem;
     margin: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .Discography__container {
+        padding: 2rem;
+        padding-top: 5.5rem; } }
     .Discography__container-header {
       font-family: League Gothic;
       font-weight: 200;
@@ -28,6 +35,9 @@ body {
       text-shadow: 0.2rem 0.2rem #485460; }
       .Discography__container-header:nth-of-type(even) {
         text-align: right; }
+      @media only screen and (max-width: 37.5em) {
+        .Discography__container-header {
+          font-size: 3.5rem; } }
     .Discography__container-discoGrid {
       margin-top: 4rem;
       display: grid;

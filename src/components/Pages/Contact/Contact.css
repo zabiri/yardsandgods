@@ -19,15 +19,20 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/img/newdrums.jpg");
   background-size: cover;
   background-position: center center;
-  color: #d2dae2; }
+  color: white; }
   .Contact__container {
-    width: 80%;
+    box-sizing: border-box;
+    width: 100%;
     padding: 10rem;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 37.5em) {
+      .Contact__container {
+        padding: 2rem;
+        padding-top: 5.5rem; } }
     .Contact__container-header {
       font-family: League Gothic;
       font-weight: 200;
@@ -35,6 +40,9 @@ body {
       text-shadow: 0.2rem 0.2rem #485460; }
       .Contact__container-header:nth-of-type(even) {
         text-align: right; }
+      @media only screen and (max-width: 37.5em) {
+        .Contact__container-header {
+          font-size: 3.5rem; } }
     .Contact__container-paragraph {
       font-family: Open Sans;
       font-weight: 200;
@@ -43,6 +51,10 @@ body {
       hyphens: auto;
       text-align: justify;
       text-shadow: 0.1rem 0.1rem black; }
+      @media only screen and (max-width: 37.5em) {
+        .Contact__container-paragraph {
+          font-size: 1.5rem;
+          padding: 1.2rem .5rem; } }
     .Contact__container-ul {
       text-shadow: 0.1rem 0.1rem black;
       position: absolute;
@@ -56,4 +68,4 @@ body {
       text-indent: 2rem; }
     .Contact__container a {
       text-decoration: none;
-      color: #d2dae2; }
+      color: white; }

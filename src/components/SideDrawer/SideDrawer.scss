@@ -9,10 +9,6 @@
   top: 0;
   left: 0;
   width: 20rem;
-
-  @include respond(phone) {
-    width: 70%;
-  }
   max-width: 20rem;
   z-index: 200;
   & h1 {
