@@ -22,16 +22,21 @@ body {
   color: white; }
   .Home__hero {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     height: 45rem;
     background-image: url("../../../assets/img/elephantlogo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right; }
+    @media screen and (min-height: 35.4em) {
+      .Home__hero {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
+    @media screen and (max-height: 35.39999em) {
+      .Home__hero {
+        transform: translateY(5rem); } }
     @media only screen and (max-width: 75em) {
       .Home__hero {
         height: 59rem;

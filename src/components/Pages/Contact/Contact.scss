@@ -2,7 +2,8 @@
 
 .Contact {
   height: 100%;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../../assets/img/newdrums.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/img/newdrums.jpg");
   background-size: cover;
   background-position: center center;
   color: $color-text-header;
@@ -12,23 +13,37 @@
       @include header;
     }
     &-paragraph {
-        @include paragraph;
+      @include paragraph;
     }
     &-ul {
-        @include paragraphShadow;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        padding-top: 2rem;
-        font-family: Open Sans;
-        font-weight: 200;
-        font-size: 2rem;
-        list-style: none;
-        text-indent: 2rem;
+      font-family: Open Sans;
+      font-weight: 200;
+      font-size: 2rem;
+      left: 50%;
+      list-style: none;
+      padding-top: 2rem;
+      position: absolute;
+      text-indent: 2rem;
+      transform: translate3d(-50%, 0, 0);
+      @include paragraphShadow;
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &__bttn {
+    transform: translate3d(0, 0, 0) scale(1);
+    transition: transform 200ms ease-in-out;
+    backface-visibility: hidden;
+    &:hover, &:active {
+      transform: translate3d(0, -0.2rem, 0) scale(1.1);
     }
     & a {
       text-decoration: none;
-      color: $color-text-header;  
+      color: darken($color-text-header, 25);
+      @media only screen and (hover: none) {
+        color: $color-text-header
+      }
     }
   }
 }

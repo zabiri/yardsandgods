@@ -9,7 +9,12 @@
 
   &__hero {
     cursor: pointer;
-    @include absCenter;
+    @media screen and (min-height: 35.4em) {
+      @include absCenter;
+    }
+    @media screen and (max-height: 35.39999em) {
+      transform: translateY(5rem);
+    }
     height: 45rem;
     background-image: url("../../../assets/img/elephantlogo.svg");
     background-size: contain;

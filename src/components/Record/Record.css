@@ -18,14 +18,22 @@ body {
   perspective: 150rem;
   position: relative;
   box-sizing: border-box;
-  height: 33rem;
-  width: 33rem; }
-  .Record:nth-of-type(3n+1) .Record__side--back {
+  height: 30rem;
+  width: 30rem; }
+  .Record:nth-of-type(3n + 1) .Record__side--back {
     background-image: url("../../assets/img/discog/recordback.jpg"); }
-  .Record:nth-of-type(3n+2) .Record__side--back {
+  .Record:nth-of-type(3n + 2) .Record__side--back {
     background-image: url("../../assets/img/discog/recordback2.jpg"); }
-  .Record:nth-of-type(3n+3) .Record__side--back {
+  .Record:nth-of-type(3n + 3) .Record__side--back {
     background-image: url("../../assets/img/discog/recordback3.jpg"); }
+  @media only screen and (max-width: 56.25em) {
+    .Record {
+      height: 20rem;
+      width: 20rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .Record {
+      height: 20rem;
+      width: 20rem; } }
   .Record__name {
     color: white;
     font-family: League Gothic;
@@ -33,32 +41,52 @@ body {
     font-weight: 200;
     margin-left: 1.2rem;
     text-shadow: 0.1rem 0.1rem black; }
+    @media only screen and (max-width: 56.25em) {
+      .Record__name {
+        font-size: 2rem;
+        margin-left: .8rem; } }
   .Record__artist {
     color: white;
-    font-weight: 200;
-    font-size: 2.5rem;
     font-family: League Gothic;
-    text-shadow: 0.1rem 0.1rem black;
-    margin-left: 1.2rem; }
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-left: 1.2rem;
+    text-shadow: 0.1rem 0.1rem black; }
+    @media only screen and (max-width: 56.25em) {
+      .Record__artist {
+        font-size: 1.666rem;
+        margin-left: .8rem; } }
   .Record__credits {
     color: white;
+    font-family: Open Sans;
     font-size: 1.8rem;
     hyphens: auto;
-    font-family: Open Sans;
-    text-shadow: 0.1rem 0.1rem black;
-    margin: auto 1.2rem; }
+    margin: auto 1.2rem;
+    text-shadow: 0.1rem 0.1rem black; }
+    @media only screen and (max-width: 56.25em) {
+      .Record__credits {
+        font-size: 1.2rem;
+        margin: auto .8rem; } }
   .Record__side {
     border-radius: 1rem;
     box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
-    height: 33rem;
-    transition: all 800ms ease;
-    width: 33rem;
+    height: 30rem;
+    width: 30rem;
+    transition: transform 800ms ease;
     backface-visibility: hidden;
     overflow: hidden;
     box-shadow: 0 0.5rem 4px rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 56.25em) {
+      .Record__side {
+        height: 20rem;
+        width: 20rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Record__side {
+        height: 20rem;
+        width: 20rem; } }
     .Record__side--front {
       background-color: white; }
       .Record__side--front-infobox {
@@ -85,10 +113,18 @@ body {
     transform: rotateY(0deg); }
   .Record__cover {
     width: 100%;
-    max-width: 33rem;
-    max-height: 33rem;
+    max-width: 30rem;
+    max-height: 30rem;
     height: 100%;
     object-fit: cover; }
+    @media only screen and (max-width: 56.25em) {
+      .Record__cover {
+        max-height: 20rem;
+        max-width: 20rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Record__cover {
+        max-height: 20rem;
+        max-width: 20rem; } }
   @media only screen and (hover: none) {
     .Record__side--front-infobox {
       display: none; }

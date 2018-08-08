@@ -2,26 +2,57 @@
 
 .Discography {
   //   height: 100%;
-  background-image: url("../../../assets/img/record.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../../assets/img/record.jpg");
   background-size: cover;
   background-position: center center;
-  
+
   color: $color-text-header;
   &__container {
-    @include container;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10rem;
+    @include respond(tab-port) {
+      padding: 2rem;
+      padding-top: 5.5rem;
+    }
     margin: auto;
-    
+
     &-header {
-      @include header;
+      font-family: $font-header;
+      font-weight: 200;
+      font-size: 6rem;
+      @include headerShadow;
+      &:nth-of-type(even) {
+        text-align: right;
+      }
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
     }
     &-discoGrid {
-        margin-top: 4rem;
+      margin-top: 4rem;
       display: grid;
       align-items: center;
       justify-content: center;
       grid-gap: 3rem;
-      grid-template-columns: repeat(auto-fit, minmax(28rem, $album-dimension));
-    //   grid-auto-rows: 100% 100%;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax($album-dimension-big, $album-dimension-big)
+      );
+      @include respond(tab-port) {
+        margin-top: 2rem;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax($album-dimension-med, $album-dimension-med)
+        );
+      }
+      @include respond(phone) {
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax($album-dimension-sml, $album-dimension-sml)
+        );
+      }
+      //   grid-auto-rows: 100% 100%;
     }
   }
 }

@@ -56,16 +56,28 @@ body {
           font-size: 1.5rem;
           padding: 1.2rem .5rem; } }
     .Contact__container-ul {
-      text-shadow: 0.1rem 0.1rem black;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      padding-top: 2rem;
       font-family: Open Sans;
       font-weight: 200;
       font-size: 2rem;
+      left: 50%;
       list-style: none;
-      text-indent: 2rem; }
-    .Contact__container a {
+      padding-top: 2rem;
+      position: absolute;
+      text-indent: 2rem;
+      transform: translate3d(-50%, 0, 0);
+      text-shadow: 0.1rem 0.1rem black; }
+      @media only screen and (max-width: 37.5em) {
+        .Contact__container-ul {
+          font-size: 1.5rem; } }
+  .Contact__bttn {
+    transform: translate3d(0, 0, 0) scale(1);
+    transition: transform 200ms ease-in-out;
+    backface-visibility: hidden; }
+    .Contact__bttn:hover, .Contact__bttn:active {
+      transform: translate3d(0, -0.2rem, 0) scale(1.1); }
+    .Contact__bttn a {
       text-decoration: none;
-      color: white; }
+      color: #bfbfbf; }
+      @media only screen and (hover: none) {
+        .Contact__bttn a {
+          color: white; } }
