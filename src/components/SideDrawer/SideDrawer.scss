@@ -1,7 +1,7 @@
 @import "../../scss/main";
 .SideDrawer {
   height: 100%;
-  background: $color-main;
+  background: $color-footer-bg;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   text-align: center;
@@ -12,6 +12,7 @@
   max-width: 20rem;
   z-index: 200;
   & h1 {
+    @include headerShadow;
     color: white;
     font-family: $font-header;
     font-size: 4.5rem;
@@ -19,6 +20,7 @@
   }
   & a {
     color: $color-text-header;
+    @include headerShadow;
     text-decoration: none;
     font-size: 3rem;
     font-family: $font-header;

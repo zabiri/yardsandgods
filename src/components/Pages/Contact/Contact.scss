@@ -8,8 +8,12 @@
   background-position: center center;
   background-attachment: fixed;
   color: $color-text-header;
+  @media screen and (max-height: 21.25em)  {
+    height: 45rem;
+  }
   &__container {
-    @include absCenterContainer;
+      @include absCenterContainer;
+    
     &-header {
       @include header;
     }

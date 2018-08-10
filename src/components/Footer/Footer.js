@@ -1,19 +1,17 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = () => { 
+const Footer = props => {
+  let footerClass;
+  props.isOpen
+    ? (footerClass = "Footer Footer-open")
+    : (footerClass = "Footer");
   return (
-    <footer className="Footer">
+    <footer className={footerClass}>
       <div className="Footer__logobox"> &nbsp; </div>
       <div className="Footer__flexcontainer">
         <div className="Footer__left Footer__cols">
-          <p>
-            This web-app was built to assist employees at Cafe Berlin in
-            calculating tip-sharing splits. While it was written as a bespoke
-            solution for a specific restaurant, it's FOSS and I encourage you to
-            fork it on &rarr;&nbsp;
-            <a href="https://github.com/zabiri/cafeberlin-tipshare">GitHub</a>.
-          </p>
+          <p>Yards & Gods Forever</p>
         </div>
         <div className="Footer__right Footer__cols">
           <ul className="Footer__list">
@@ -32,19 +30,13 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://github.com/zabiri/cafeberlin-tipshare">
-                <i className="fab fa-github" /> : zabiri/cafeberlin-tipshare
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.facebook.com/cafeberlincomo/">
-                <i className="fab fa-facebook" /> : @cafeberlincomo
+              <a href="https://www.facebook.com/yardsandgods/">
+                <i className="fab fa-facebook" /> : @yardsandgods
               </a>
             </li>
             <li>
               <i className="fas fa-copyright" /> :{" "}
-              <a href="http://cafeberlincomo.com">Cafe Berlin 2018</a>
+              <a href="http://zachbiri.com">Zach Biri 2018</a>
             </li>
           </ul>
         </div>

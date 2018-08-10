@@ -1,15 +1,22 @@
 @import './scss/main';
 .App {
     // height: 100%;
-    background-color: $color-main;
+    background-color: $color-footer-bg;
     &__contentBox {
         // height: 100vh;
         position: relative;
         transform: translate3d(0);
-        transition: 300ms ease-in-out;
+        transition: transform 300ms ease-in-out;
         &-open {
             transform: translate3d(20rem,0,0);
             
+        }
+    }
+    &__Footer {
+        transform: translate3d(0);
+        transition: transform 300ms ease-in-out;
+        &-open {
+            transform: translate3d(20rem,0,0);
         }
     }
 }

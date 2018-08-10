@@ -2,12 +2,18 @@
 
 .Home {
   height: 100vh;
+  min-height: 34vh;
   background-image: url("../../../assets/img/studio.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   color: $color-text-header;
-
+  @media screen and (max-height: 40.625em) {
+    min-height: 66rem;
+  }
+  // @media screen and (max-height: 40.625em) and (max-width: 37.49em) {
+  //   min-height: 34rem;
+  // }
   &__hero {
     cursor: pointer;
     @media screen and (min-height: 35.4em) {
@@ -16,11 +22,12 @@
     @media screen and (max-height: 35.39999em) {
       transform: translateY(5rem);
     }
-    height: 45rem;
+    // width: 53.37rem;
+    height: 59rem;
     background-image: url("../../../assets/img/elephantlogo.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom center;
     @include respond(tab-land) {
       height: 59rem;
       background-position: bottom center;
@@ -39,7 +46,7 @@
 
       &-h1 {
         text-align: center;
-        font-size: 15rem;
+        font-size: 15.5rem;
         @include respond(tab-land) {
           font-size: 15.5rem;
         }
@@ -52,8 +59,8 @@
       }
       &-h2 {
         text-align: center;
-        font-size: 3.3rem;
-        letter-spacing: 0.5rem;
+        font-size: 4.7rem;
+        letter-spacing: 0.2rem;
         @include respond(tab-land) {
           font-size: 4.7rem;
           letter-spacing: 0.2rem;

@@ -75,7 +75,7 @@ class App extends Component {
               />
             </Switch>
           </main>
-          <Footer/>
+          <Footer isOpen={this.state.sideDrawerOpen} />
         </div>
       </BrowserRouter>
     );

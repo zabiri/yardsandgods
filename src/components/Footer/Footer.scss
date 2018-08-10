@@ -1,16 +1,18 @@
 @import "../../scss/main.scss";
 .Footer {
-  background-color: #333333;
+  background-color: $color-footer-bg;
   box-sizing: border-box;
-  // bottom: 0;
   clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
   color: $color-text-header;
-  font-family: $font-header;
+  font-family: $font-paragraph;
   padding: 3rem 0;
-  // position: absolute;
-  // width: 100%;
+  transform: translate(0, -2.8rem);
+  transition: transform 300ms ease-in-out;
   @include respond(phone) {
     clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  &-open {
+    transform: translate(20rem, -2.8rem);
   }
   &__flexcontainer {
     display: flex;
@@ -23,69 +25,54 @@
   }
   &__cols {
     box-sizing: border-box;
-    padding: 0 1.5rem;
     font-size: 1.2rem;
-    width: 35rem;
-    @include respond(tab-land) {
-      padding: 0rem 3rem;
-      width: 35rem;
-    }
-    @include respond(tab-port) {
-      padding: 0rem 3rem;
-      width: 29rem;
-    }
+    padding: 0 3rem;
+    width: 29rem;
     @include respond(phone) {
-      width: 41.9rem;
+      width: 30.1rem;
     }
   }
   &__left {
-    border-right: 1px rgb(95, 95, 95) solid;
-    text-align: justify;
-    text-indent: 2%;
+    border-right: 1px rgb(54, 54, 54) solid;
+    font-family: $font-header;
+    font-size: 3rem;
+    padding-top: 2.2rem;
+    text-align: right;
+    @include headerShadow;
     @include respond(phone) {
       border: 0;
-      border-bottom: 1px rgb(95, 95, 95) solid;
+      border-bottom: 1px rgb(54, 54, 54) solid;
+      padding-bottom: 2rem;
+      padding-top: 0;
+      text-align: center;
+      font-size: 3.5rem;
     }
   }
   &__right {
     text-align: left;
+    font-size: 1.6rem;
     @include respond(phone) {
-      border-bottom: 1px rgb(95, 95, 95) solid;
-      font-size: 1.4rem;
+      border-bottom: 1px rgb(54, 54, 54) solid;
     }
   }
   &__list {
-    @include respond(tab-land) {
-      margin-top: 1rem;
-    }
-    @include respond(tab-port) {
-      margin-top: 1.6rem;
-    }
-    @include respond(phone) {
-      margin: 1.6rem auto;
-    }
     list-style: none;
+    margin-top: 0rem;
     padding: 0;
     width: 18.5rem;
+    @include respond(phone) {
+      margin: 2.4rem auto;
+    }
     & li {
       margin: 0.2rem 0;
     }
   }
   &__logobox {
-    height: 5rem;
-    @include respond(tab-port) {
-      height: 8rem;
-    }
-    @include respond(tab-port) {
-      height: 8rem;
-    }
-    @include respond(phone) {
-      height: 8rem;
-    }
     animation: Gradient 10s ease infinite;
     background: linear-gradient(270deg, #4c49b2, #db4eb2, #fbfc79, #0eb7e1);
     background-size: 800% 800%;
-    margin: 1.6rem 0 1rem 0;
+    height: 10rem;
+    margin: 2rem 0;
     mask: url(../../assets/img/elephantlogoonecolor.svg);
     mask-position: bottom center;
     mask-repeat: no-repeat;
