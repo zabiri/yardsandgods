@@ -19,7 +19,7 @@ const record = props => {
         <div className="Record__side Record__side--back">
           <div className="Record__side--back-infobox">
             <p className="Record__artist">
-              {props.name} by {props.artist} ({props.year}) :
+              {props.name} by {props.artist} ({props.year}):
             </p>
             <p className="Record__credits">{props.credits}</p>
           </div>

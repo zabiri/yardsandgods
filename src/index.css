@@ -4,6 +4,14 @@
   src: url("./assets/webfont/leaguegothic.eot");
   src: url("./assets/webfont/leaguegothic.eot?#iefix") format("embedded-opentype"), url("./assets/webfont/leaguegothic.woff") format("woff"), url("./assets/webfont/leaguegothic.ttf") format("truetype"), url("./assets/webfont/leaguegothic.svg#fontname") format("svg"); }
 
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 *,
 *::after,
 *::before {

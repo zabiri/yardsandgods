@@ -1,0 +1,55 @@
+@import "../../../scss/main";
+.Filmography {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../../../assets/img/filmog.jpg");
+  background-size: cover;
+  background-position: center center;
+background-attachment: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10rem;
+  margin: auto;
+  color: white;
+  @include respond(tab-port) {
+    padding: 2rem;
+    padding-top: 5.5rem;
+  }
+  &__header {
+    font-family: $font-header;
+    font-weight: 200;
+    font-size: 6rem;
+    @include headerShadow;
+    &:nth-of-type(even) {
+      text-align: right;
+    }
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__filmgrid {
+    margin-top: 4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax($film-dimension-big, $film-dimension-big)
+    );
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax($film-dimension-med, $film-dimension-med)
+      );
+    }
+    @include respond(phone) {
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax($film-dimension-sml, $film-dimension-sml)
+      );
+    }
+    //   grid-auto-rows: 100% 100%;
+  }
+}

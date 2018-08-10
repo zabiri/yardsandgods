@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 *,
 *::after,
 *::before {
@@ -36,7 +44,7 @@ body {
    * Arrow Alt
    */ }
   .hamburger.is-active {
-    transform: translateX(14rem); }
+    transform: translateX(13rem); }
   .hamburger-box {
     width: 4rem;
     height: 2.4rem;

@@ -1,10 +1,11 @@
 @import "../../../scss/main";
 
 .Home {
-  height: 100%;
+  height: 100vh;
   background-image: url("../../../assets/img/studio.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   color: $color-text-header;
 
   &__hero {

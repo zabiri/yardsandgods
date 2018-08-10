@@ -5,6 +5,7 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import DrawerToggleButton from "./components/SideDrawer/DrawerToggleButton";
 
 import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Footer from "./components/Footer/Footer";
 
 import asyncComponent from "./components/hoc/asyncComponent/asyncComponent";
 
@@ -70,10 +71,11 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route
                 path="/"
-                render={()=><Home click={this.drawerToggleClickHandler}/>}
+                render={() => <Home click={this.drawerToggleClickHandler} />}
               />
             </Switch>
           </main>
+          <Footer/>
         </div>
       </BrowserRouter>
     );

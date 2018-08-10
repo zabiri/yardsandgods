@@ -1,0 +1,43 @@
+@import "../../scss/main";
+.Film {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px; 
+  box-sizing: border-box;
+  border-collapse: separate; 
+  transform: scale(1);
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  &__cover {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__info {
+    background-color: white;
+    padding: 1rem 1.3rem;
+    margin-top: 0;
+    height: 100%;
+    border-radius: 5px;
+  }
+  &__header {
+    //   text-align: center;
+    font-family: $font-header;
+    font-size: 3rem;
+    font-weight: 200;
+
+  }
+  &__paragraph {
+    font-family: $font-paragraph;
+    font-size: 1.8rem;
+    hyphens: auto;
+
+  }
+}

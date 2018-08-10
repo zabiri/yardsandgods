@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: black;
+  overflow-x: hidden !important; }
+
+.Filmography {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../../../assets/img/filmog.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10rem;
+  margin: auto;
+  color: white; }
+  @media only screen and (max-width: 56.25em) {
+    .Filmography {
+      padding: 2rem;
+      padding-top: 5.5rem; } }
+  .Filmography__header {
+    font-family: League Gothic;
+    font-weight: 200;
+    font-size: 6rem;
+    text-shadow: 0.2rem 0.2rem #485460; }
+    .Filmography__header:nth-of-type(even) {
+      text-align: right; }
+    @media only screen and (max-width: 56.25em) {
+      .Filmography__header {
+        font-size: 3.5rem; } }
+  .Filmography__filmgrid {
+    margin-top: 4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(33.7rem, 33.7rem)); }
+    @media only screen and (max-width: 56.25em) {
+      .Filmography__filmgrid {
+        margin-top: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(25.5rem, 25.5rem)); } }
+    @media only screen and (max-width: 37.5em) {
+      .Filmography__filmgrid {
+        grid-template-columns: repeat(auto-fit, minmax(25.5rem, 25.5rem)); } }

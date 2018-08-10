@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: black;
+  overflow-x: hidden !important; }
+
+.Footer {
+  background-color: #333333;
+  box-sizing: border-box;
+  clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+  color: white;
+  font-family: League Gothic;
+  padding: 3rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .Footer {
+      clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%); } }
+  .Footer__flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .Footer a {
+    color: white;
+    text-decoration: none; }
+  .Footer__cols {
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    width: 35rem; }
+    @media only screen and (max-width: 75em) {
+      .Footer__cols {
+        padding: 0rem 3rem;
+        width: 35rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .Footer__cols {
+        padding: 0rem 3rem;
+        width: 29rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Footer__cols {
+        width: 41.9rem; } }
+  .Footer__left {
+    border-right: 1px #5f5f5f solid;
+    text-align: justify;
+    text-indent: 2%; }
+    @media only screen and (max-width: 37.5em) {
+      .Footer__left {
+        border: 0;
+        border-bottom: 1px #5f5f5f solid; } }
+  .Footer__right {
+    text-align: left; }
+    @media only screen and (max-width: 37.5em) {
+      .Footer__right {
+        border-bottom: 1px #5f5f5f solid;
+        font-size: 1.4rem; } }
+  .Footer__list {
+    list-style: none;
+    padding: 0;
+    width: 18.5rem; }
+    @media only screen and (max-width: 75em) {
+      .Footer__list {
+        margin-top: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .Footer__list {
+        margin-top: 1.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Footer__list {
+        margin: 1.6rem auto; } }
+    .Footer__list li {
+      margin: 0.2rem 0; }
+  .Footer__logobox {
+    height: 5rem;
+    animation: Gradient 10s ease infinite;
+    background: linear-gradient(270deg, #4c49b2, #db4eb2, #fbfc79, #0eb7e1);
+    background-size: 800% 800%;
+    margin: 1.6rem 0 1rem 0;
+    mask: url(../../assets/img/elephantlogoonecolor.svg);
+    mask-position: bottom center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    padding: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .Footer__logobox {
+        height: 8rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .Footer__logobox {
+        height: 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Footer__logobox {
+        height: 8rem; } }

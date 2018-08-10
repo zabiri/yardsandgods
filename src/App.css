@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 *,
 *::after,
 *::before {
@@ -17,7 +25,6 @@ body {
 .App {
   background-color: black; }
   .App__contentBox {
-    height: 100vh;
     position: relative;
     transform: translate3d(0);
     transition: 300ms ease-in-out; }
