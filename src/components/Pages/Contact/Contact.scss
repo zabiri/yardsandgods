@@ -1,19 +1,18 @@
 @import "../../../scss/main";
 
 .Contact {
-  height: 100vh;
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../assets/img/newdrums.jpg");
-  background-size: cover;
+  height: 100vh;
   background-position: center center;
-  background-attachment: fixed;
+  background-size: cover;
   color: $color-text-header;
-  @media screen and (max-height: 21.25em)  {
+  @media screen and (max-height: 21.25em) {
     height: 45rem;
   }
   &__container {
-      @include absCenterContainer;
-    
+    @include absCenterContainer;
     &-header {
       @include header;
     }
@@ -22,8 +21,8 @@
     }
     &-ul {
       font-family: Open Sans;
-      font-weight: 200;
       font-size: 2rem;
+      font-weight: 200;
       left: 50%;
       list-style: none;
       padding-top: 2rem;
@@ -37,17 +36,22 @@
     }
   }
   &__bttn {
+    backface-visibility: hidden;
     transform: translate3d(0, 0, 0) scale(1);
     transition: transform 200ms ease-in-out;
-    backface-visibility: hidden;
-    &:hover, &:active {
+    &:hover,
+    &:active {
       transform: translate3d(0, -0.2rem, 0) scale(1.1);
     }
     & a {
-      text-decoration: none;
       color: darken($color-text-header, 25);
+      text-decoration: none;
+      &:hover,
+      &:active {
+        color: $color-text-header;
+      }
       @media only screen and (hover: none) {
-        color: $color-text-header
+        color: $color-text-header;
       }
     }
   }

@@ -1,23 +1,23 @@
 @import "../../../scss/main";
 .Filmography {
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url("../../../assets/img/filmog.jpg");
-  background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-size: cover;
   box-sizing: border-box;
-  width: 100%;
-  padding: 10rem;
-  margin: auto;
   color: white;
+  margin: auto;
+  padding: 10rem;
+  width: 100%;
   @include respond(tab-port) {
     padding: 2rem;
     padding-top: 5.5rem;
   }
   &__header {
     font-family: $font-header;
-    font-weight: 200;
     font-size: 6rem;
+    font-weight: 200;
     @include headerShadow;
     &:nth-of-type(even) {
       text-align: right;
@@ -26,25 +26,23 @@
       font-size: 3.5rem;
     }
   }
-
   &__filmgrid {
-    margin-top: 4rem;
-    
-    display: grid;
     align-items: center;
-    justify-content: center;
+    display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(
       auto-fit,
       minmax($film-dimension-big, $film-dimension-big)
     );
+    justify-content: center;
+    margin-top: 4rem;
     @include respond(tab-port) {
-      margin-top: 2rem;
-      margin-bottom: 3rem;
       grid-template-columns: repeat(
         auto-fit,
         minmax($film-dimension-med, $film-dimension-med)
       );
+      margin-top: 2rem;
+      margin-bottom: 3rem;
     }
     @include respond(phone) {
       grid-template-columns: repeat(
@@ -52,6 +50,5 @@
         minmax($film-dimension-sml, $film-dimension-sml)
       );
     }
-    //   grid-auto-rows: 100% 100%;
   }
 }

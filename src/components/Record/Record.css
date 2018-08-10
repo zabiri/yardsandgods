@@ -196,10 +196,10 @@ body {
   overflow-x: hidden !important; }
 
 .Record {
-  perspective: 150rem;
-  position: relative;
   box-sizing: border-box;
   height: 30rem;
+  perspective: 150rem;
+  position: relative;
   width: 30rem; }
   .Record:nth-of-type(3n + 1) .Record__side--back {
     background-image: url("../../assets/img/discog/recordback.jpg"); }
@@ -225,7 +225,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .Record__name {
         font-size: 2rem;
-        margin-left: .8rem; } }
+        margin-left: 0.8rem; } }
   .Record__artist {
     color: white;
     font-family: League Gothic;
@@ -236,7 +236,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .Record__artist {
         font-size: 1.666rem;
-        margin-left: .8rem; } }
+        margin-left: 0.8rem; } }
   .Record__credits {
     color: white;
     font-family: Open Sans;
@@ -247,18 +247,18 @@ body {
     @media only screen and (max-width: 56.25em) {
       .Record__credits {
         font-size: 1.2rem;
-        margin: auto .8rem; } }
+        margin: auto 0.8rem; } }
   .Record__side {
+    backface-visibility: hidden;
     border-radius: 1rem;
     box-sizing: border-box;
     position: absolute;
-    top: 0;
-    left: 0;
     height: 30rem;
-    width: 30rem;
-    transition: transform 800ms ease;
-    backface-visibility: hidden;
+    left: 0;
     overflow: hidden;
+    top: 0;
+    transition: transform 800ms ease;
+    width: 30rem;
     box-shadow: 0 0.5rem 4px rgba(0, 0, 0, 0.3); }
     @media only screen and (max-width: 56.25em) {
       .Record__side {
@@ -293,9 +293,9 @@ body {
   .Record:hover .Record__side--back {
     transform: rotateY(0deg); }
   .Record__cover {
-    width: 100%;
     max-width: 30rem;
     max-height: 30rem;
+    width: 100%;
     height: 100%;
     object-fit: cover; }
     @media only screen and (max-width: 56.25em) {

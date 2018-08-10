@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import "./NavItems.css";
 const navItems = props => {
   return (
     <div className={props.whichNav}>
       <ul>
-        <NavLink to="/" onClick={props.clicked}><h1 className="NavItems-header">Yards & Gods</h1></NavLink>
+        <NavLink to="/" onClick={props.clicked}>
+          <h1 className="NavItems-header">Yards & Gods</h1>
+        </NavLink>
         <li>
           <NavLink
             activeClassName="NavItems-active"
@@ -44,13 +45,25 @@ const navItems = props => {
           </NavLink>
         </li>
         <h2 className="NavItems-footer">
-          <a target="_blank" rel="noopener noreferrer" href="http://twitter.com/zachbiri">
+          <a
+            href="http://twitter.com/zachbiri"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="fab fa-twitter" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/zachbiri">
+          <a
+            href="https://soundcloud.com/zachbiri"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="fab fa-soundcloud" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/yardsandgods/">
+          <a
+            href="https://www.facebook.com/yardsandgods/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="fab fa-facebook" />
           </a>
         </h2>
@@ -58,5 +71,4 @@ const navItems = props => {
     </div>
   );
 };
-
 export default navItems;

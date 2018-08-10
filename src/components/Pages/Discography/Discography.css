@@ -196,15 +196,15 @@ body {
   overflow-x: hidden !important; }
 
 .Discography {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/img/record.jpg");
-  background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/img/record.jpg");
+  background-position: center center;
+  background-size: cover;
   color: white; }
   .Discography__container {
     box-sizing: border-box;
-    width: 100%;
     padding: 10rem;
+    width: 100%;
     margin: auto; }
     @media only screen and (max-width: 56.25em) {
       .Discography__container {
@@ -212,8 +212,8 @@ body {
         padding-top: 5.5rem; } }
     .Discography__container-header {
       font-family: League Gothic;
-      font-weight: 200;
       font-size: 6rem;
+      font-weight: 200;
       text-shadow: 0.2rem 0.2rem #485460; }
       .Discography__container-header:nth-of-type(even) {
         text-align: right; }
@@ -221,16 +221,16 @@ body {
         .Discography__container-header {
           font-size: 3.5rem; } }
     .Discography__container-discoGrid {
-      margin-top: 4rem;
-      display: grid;
       align-items: center;
+      display: grid;
       justify-content: center;
       grid-gap: 3rem;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem)); }
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem));
+      margin-top: 4rem; }
       @media only screen and (max-width: 56.25em) {
         .Discography__container-discoGrid {
-          margin-top: 2rem;
-          grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem)); } }
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+          margin-top: 2rem; } }
       @media only screen and (max-width: 37.5em) {
         .Discography__container-discoGrid {
           grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem)); } }

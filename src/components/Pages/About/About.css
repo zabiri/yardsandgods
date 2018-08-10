@@ -197,9 +197,9 @@ body {
 
 .About {
   background: url("../../../assets/img/aboutme.jpg");
-  background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
   color: white;
   transition: ease 200ms; }
   @media screen and (min-height: 37.5em) {
@@ -243,6 +243,6 @@ body {
           font-size: 1.5rem;
           padding: 1.2rem .5rem; } }
       .About__container-paragraph a {
-        text-decoration: none;
         color: white;
-        font-weight: bold; }
+        font-weight: bold;
+        text-decoration: none; }

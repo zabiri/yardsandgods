@@ -196,23 +196,23 @@ body {
   overflow-x: hidden !important; }
 
 .Home {
-  height: 100vh;
-  min-height: 34vh;
   background-image: url("../../../assets/img/studio.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  color: white; }
+  color: white;
+  height: 100vh;
+  min-height: 34vh; }
   @media screen and (max-height: 40.625em) {
     .Home {
       min-height: 66rem; } }
   .Home__hero {
-    cursor: pointer;
-    height: 59rem;
     background-image: url("../../../assets/img/elephantlogo.svg");
-    background-size: contain;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    background-position: bottom center; }
+    background-size: contain;
+    cursor: pointer;
+    height: 59rem; }
     @media screen and (min-height: 35.4em) {
       .Home__hero {
         position: absolute;
@@ -225,25 +225,25 @@ body {
         transform: translateY(5rem); } }
     @media only screen and (max-width: 75em) {
       .Home__hero {
-        height: 59rem;
         background-position: bottom center;
+        height: 59rem;
         min-width: 59.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .Home__hero {
-        height: 34rem;
         background-position: bottom center;
+        height: 34rem;
         min-width: 31.2667rem; } }
     .Home__hero-header {
-      position: relative;
       top: 25%;
       transform: translateY(-2.9rem);
+      position: relative;
       text-shadow: 0.2rem 0.2rem #485460; }
       .Home__hero-header-h1 {
         text-align: center;
         font-size: 15.5rem;
         font-family: League Gothic;
-        line-height: 0.95em;
-        font-weight: 200; }
+        font-weight: 200;
+        line-height: 0.95em; }
         @media only screen and (max-width: 75em) {
           .Home__hero-header-h1 {
             font-size: 15.5rem; } }
@@ -251,9 +251,9 @@ body {
           .Home__hero-header-h1 {
             font-size: 7.5rem; } }
       .Home__hero-header-h2 {
-        text-align: center;
         font-size: 4.7rem;
         letter-spacing: 0.2rem;
+        text-align: center;
         font-family: League Gothic;
         font-weight: 200; }
         @media only screen and (max-width: 75em) {

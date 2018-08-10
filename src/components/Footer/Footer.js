@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-
 const Footer = props => {
   let footerClass;
   props.isOpen
@@ -17,11 +16,13 @@ const Footer = props => {
           <ul className="Footer__list">
             <li>
               <a href="http://zachbiri.com">
-                <i className="fab fa-react" />&nbsp;
-                <i className="fab fa-html5" />&nbsp;
-                <i className="fab fa-js-square" />&nbsp;
-                <i className="fab fa-sass" />
-                : Zach Biri
+                <i className="fab fa-react" />
+                &nbsp;
+                <i className="fab fa-html5" />
+                &nbsp;
+                <i className="fab fa-js-square" />
+                &nbsp;
+                <i className="fab fa-sass" />: Zach Biri
               </a>
             </li>
             <li>
@@ -30,12 +31,20 @@ const Footer = props => {
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/yardsandgods/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com/yardsandgods/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-facebook" /> : @yardsandgods
               </a>
             </li>
             <li>
-              <a href="http://zachbiri.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://zachbiri.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fas fa-copyright" /> : Zach Biri 2018
               </a>
             </li>
@@ -45,5 +54,4 @@ const Footer = props => {
     </footer>
   );
 };
-
 export default Footer;

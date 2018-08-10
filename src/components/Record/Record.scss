@@ -1,6 +1,11 @@
 @import "../../scss/main";
 
 .Record {
+  box-sizing: border-box;
+  height: $album-dimension-big;
+  perspective: 150rem;
+  position: relative;
+  width: $album-dimension-big;
   &:nth-of-type(3n + 1) &__side--back {
     background-image: url("../../assets/img/discog/recordback.jpg");
   }
@@ -10,11 +15,6 @@
   &:nth-of-type(3n + 3) &__side--back {
     background-image: url("../../assets/img/discog/recordback3.jpg");
   }
-  perspective: 150rem;
-  position: relative;
-  box-sizing: border-box;
-  height: $album-dimension-big;
-  width: $album-dimension-big;
   @include respond(tab-port) {
     height: $album-dimension-med;
     width: $album-dimension-med;
@@ -32,7 +32,7 @@
     @include paragraphShadow;
     @include respond(tab-port) {
       font-size: 2rem;
-      margin-left: .8rem;
+      margin-left: 0.8rem;
     }
   }
   &__artist {
@@ -44,7 +44,7 @@
     @include paragraphShadow;
     @include respond(tab-port) {
       font-size: 1.666rem;
-      margin-left: .8rem;
+      margin-left: 0.8rem;
     }
   }
   &__credits {
@@ -56,16 +56,19 @@
     @include paragraphShadow;
     @include respond(tab-port) {
       font-size: 1.2rem;
-      margin: auto .8rem;
+      margin: auto 0.8rem;
     }
   }
   &__side {
+    backface-visibility: hidden;
     border-radius: 1rem;
     box-sizing: border-box;
     position: absolute;
-    top: 0;
-    left: 0;
     height: $album-dimension-big;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    transition: transform 800ms ease;
     width: $album-dimension-big;
     @include respond(tab-port) {
       height: $album-dimension-med;
@@ -75,9 +78,6 @@
       height: $album-dimension-sml;
       width: $album-dimension-sml;
     }
-    transition: transform 800ms ease;
-    backface-visibility: hidden;
-    overflow: hidden;
     &--front {
       background-color: white;
       &-infobox {
@@ -101,16 +101,16 @@
     transform: rotateY(0deg);
   }
   &__cover {
-    width: 100%;
     max-width: $album-dimension-big;
     max-height: $album-dimension-big;
+    width: 100%;
     @include respond(tab-port) {
-      max-height:  $album-dimension-med;
-      max-width: $album-dimension-med
+      max-height: $album-dimension-med;
+      max-width: $album-dimension-med;
     }
     @include respond(phone) {
-      max-height:  $album-dimension-sml;
-      max-width: $album-dimension-sml
+      max-height: $album-dimension-sml;
+      max-width: $album-dimension-sml;
     }
     height: 100%;
     object-fit: cover;

@@ -3,9 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Backdrop from "./components/Backdrop/Backdrop";
 import DrawerToggleButton from "./components/SideDrawer/DrawerToggleButton";
-
-import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Footer from "./components/Footer/Footer";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
 
 import asyncComponent from "./components/hoc/asyncComponent/asyncComponent";
 

@@ -1,49 +1,44 @@
 @import "../../../scss/main";
 
 .Home {
-  height: 100vh;
-  min-height: 34vh;
   background-image: url("../../../assets/img/studio.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   color: $color-text-header;
+  height: 100vh;
+  min-height: 34vh;
   @media screen and (max-height: 40.625em) {
     min-height: 66rem;
   }
-  // @media screen and (max-height: 40.625em) and (max-width: 37.49em) {
-  //   min-height: 34rem;
-  // }
   &__hero {
+    background-image: url("../../../assets/img/elephantlogo.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
     cursor: pointer;
+    height: 59rem;
     @media screen and (min-height: 35.4em) {
       @include absCenter;
     }
     @media screen and (max-height: 35.39999em) {
       transform: translateY(5rem);
     }
-    // width: 53.37rem;
-    height: 59rem;
-    background-image: url("../../../assets/img/elephantlogo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom center;
     @include respond(tab-land) {
-      height: 59rem;
       background-position: bottom center;
+      height: 59rem;
       min-width: 59.5rem;
     }
     @include respond(phone) {
-      height: 34rem;
       background-position: bottom center;
+      height: 34rem;
       min-width: 31.2667rem;
     }
     &-header {
-      position: relative;
       top: 25%;
       transform: translateY(-2.9rem);
+      position: relative;
       @include headerShadow;
-
       &-h1 {
         text-align: center;
         font-size: 15.5rem;
@@ -54,13 +49,13 @@
           font-size: 7.5rem;
         }
         font-family: $font-header;
-        line-height: 0.95em;
         font-weight: 200;
+        line-height: 0.95em;
       }
       &-h2 {
-        text-align: center;
         font-size: 4.7rem;
         letter-spacing: 0.2rem;
+        text-align: center;
         @include respond(tab-land) {
           font-size: 4.7rem;
           letter-spacing: 0.2rem;

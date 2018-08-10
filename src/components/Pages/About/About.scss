@@ -1,20 +1,18 @@
 @import "../../../scss/main";
 
 .About {
-  // min-height: 100vh;
-  // height: 100vh;
   background: url("../../../assets/img/aboutme.jpg");
-  background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
   color: $color-text-header;
   transition: ease 200ms;
-  @media screen and (min-height: 37.5em)  {
+  @media screen and (min-height: 37.5em) {
     height: 100vh;
   }
   &__container {
     @include container;
-    @media screen and (min-height: 37.5em)  {
+    @media screen and (min-height: 37.5em) {
       @include absCenter;
     }
     &-header {
@@ -23,9 +21,9 @@
     &-paragraph {
       @include paragraph;
       & a {
-        text-decoration: none;
         color: $color-text-header;
         font-weight: bold;
+        text-decoration: none;
       }
     }
   }

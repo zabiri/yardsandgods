@@ -2,15 +2,14 @@ import React, { Component } from "react";
 import Film from "../../Film/Film";
 import "./Filmography.css";
 
-import ParapraxisCover from "../../../assets/img/filmog/2014-parapraxis.jpg";
 import ArtistCover from "../../../assets/img/filmog/2015-artist.jpg";
 import BerlinNightsCover from "../../../assets/img/filmog/2015-berlinnights.jpg";
 import CleanCover from "../../../assets/img/filmog/2015-clean.jpg";
-import InCCover from "../../../assets/img/filmog/2015-inc.jpg";
-import PedestriansCover from "../../../assets/img/filmog/2015-pedestrians.jpg";
 import GoodbyeStrangerCover from "../../../assets/img/filmog/2016-goodbyestranger.jpg";
+import InCCover from "../../../assets/img/filmog/2015-inc.jpg";
+import ParapraxisCover from "../../../assets/img/filmog/2014-parapraxis.jpg";
+import PedestriansCover from "../../../assets/img/filmog/2015-pedestrians.jpg";
 import TwerpCover from "../../../assets/img/filmog/2017-twerp.jpg";
-
 export class filmography extends Component {
   state = {
     filmography: [
@@ -75,12 +74,12 @@ export class filmography extends Component {
   render() {
     const filmography = this.state.filmography.map(film => (
       <Film
+        credits={film.credits}
+        img={film.img}
+        key={film.link}
+        link={film.link}
         name={film.name}
         year={film.year}
-        credits={film.credits}
-        link={film.link}
-        key={film.link}
-        img={film.img}
       />
     ));
     return (
