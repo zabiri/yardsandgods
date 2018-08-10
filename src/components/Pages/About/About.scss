@@ -22,6 +22,11 @@
     }
     &-paragraph {
       @include paragraph;
+      & a {
+        text-decoration: none;
+        color: $color-text-header;
+        font-weight: bold;
+      }
     }
   }
 }
