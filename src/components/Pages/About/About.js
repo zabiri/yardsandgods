@@ -20,12 +20,12 @@ const about = () => {
         </p>
         <h1 className="About__container-header">About the Engineer</h1>
         <p className="About__container-paragraph">
-          My name is Zach Biri. I am a/an: audio engineer, musician, web
+          My name is <a href="http://zachbiri.com" target="_blank" rel="noopener noreferrer">Zach Biri</a>. I am a/an: audio engineer, musician, web
           developer, audiophile, technophile, cat enthusiast, video editor,
           animator, trekkie, etc… I have been recording music and engineering
           live sound for over half of my life. I operate a modest digital
-          recording studio in my home for reasonable rates (inquire
-          <NavLink to="./contact/">here</NavLink>).
+          recording studio in my home for reasonable rates (inquire {" "}
+          <NavLink to="./contact/">&rarr;here</NavLink>).
         </p>
       </div>
     </section>

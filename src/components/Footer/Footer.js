@@ -30,13 +30,14 @@ const Footer = props => {
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/yardsandgods/">
+              <a href="https://www.facebook.com/yardsandgods/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook" /> : @yardsandgods
               </a>
             </li>
             <li>
-              <i className="fas fa-copyright" /> :{" "}
-              <a href="http://zachbiri.com">Zach Biri 2018</a>
+              <a href="http://zachbiri.com" target="_blank" rel="noopener noreferrer">
+                <i className="fas fa-copyright" /> : Zach Biri 2018
+              </a>
             </li>
           </ul>
         </div>

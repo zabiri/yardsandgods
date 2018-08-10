@@ -9,12 +9,12 @@
   background-attachment: fixed;
   color: $color-text-header;
   transition: ease 200ms;
-  @media screen and (min-height: 52.188em)  {
+  @media screen and (min-height: 37.5em)  {
     height: 100vh;
   }
   &__container {
     @include container;
-    @media screen and (min-height: 52.188em)  {
+    @media screen and (min-height: 37.5em)  {
       @include absCenter;
     }
     &-header {
