@@ -241,7 +241,7 @@ body {
       .Home__hero-header-h1 {
         text-align: center;
         font-size: 15.5rem;
-        font-family: League Gothic;
+        font-family: LeagueGothic;
         font-weight: 200;
         line-height: 0.95em; }
         @media only screen and (max-width: 75em) {
@@ -254,7 +254,7 @@ body {
         font-size: 4.7rem;
         letter-spacing: 0.2rem;
         text-align: center;
-        font-family: League Gothic;
+        font-family: LeagueGothic;
         font-weight: 200; }
         @media only screen and (max-width: 75em) {
           .Home__hero-header-h2 {

@@ -217,7 +217,7 @@ body {
       width: 20rem; } }
   .Record__name {
     color: white;
-    font-family: League Gothic;
+    font-family: LeagueGothic;
     font-size: 3rem;
     font-weight: 200;
     margin-left: 1.2rem;
@@ -228,7 +228,7 @@ body {
         margin-left: 0.8rem; } }
   .Record__artist {
     color: white;
-    font-family: League Gothic;
+    font-family: LeagueGothic;
     font-size: 2.5rem;
     font-weight: 200;
     margin-left: 1.2rem;
